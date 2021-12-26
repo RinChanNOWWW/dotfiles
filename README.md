@@ -1,15 +1,18 @@
-# scripts
+# dotfiles
 
 个人常用脚本
 
 ```
-├── REAMDE.md
+├── README.md
 ├── linux
-│   ├── REAMDE.md
+│   ├── .vimrc
+│   ├── .zshrc
+│   ├── README.md
+│   ├── leetcode.mk
 │   └── set_proxy.sh
 └── windows
     ├── Microsoft.PowerShell_profile.ps1
-    ├── REAMDE.md
+    ├── README.md
     └── games
         └── sdvx
             └── gamestart.bat
