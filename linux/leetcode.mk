@@ -1,8 +1,21 @@
 DATE = $(shell date +"%Y-%m-%d")
 WEEKLY-CONTEST-DIR = 周赛/第$(CONTEST_NO)场\($(DATE)\)
 
+CC = clang++
+CFLAGS = -g -O
+RM = rm -f
+
+SOURCES = $(wildcard *.cpp)
+TARGETS = $(SOURCES:.cpp=.out)
+
+all: $(TARGETS)
+
+$(TARGETS): %.out : %.cpp
+	$(CC) $(CFLAGS) -o $@ $<
+
 clean:
-	find . -name '*.out' -type f -exec rm -rf {} \;
+	@rm -f $(TARGETS)
+	@find . -name '*.out' -type f -exec $(RM) {} \;
 
 create-weekly-contest:
 ifeq ($(CONTEST_NO),)
