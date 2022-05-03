@@ -107,4 +107,5 @@ alias edit-zshrc="vim $HOME/.zshrc"
 alias apply-zshrc="source $HOME/.zshrc"
 alias payton=python
 alias payton3=python3
-
+alias pip='noglob pip'
+alias pip3='noglob pip3'
