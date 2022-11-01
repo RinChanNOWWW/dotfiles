@@ -1,0 +1,29 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdf->bib->pdf->pdf",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "pdflatex",
+      "tools": ["pdflatex"]
+    }
+  ],
+}
