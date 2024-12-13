@@ -25,5 +25,5 @@
       "name": "pdflatex",
       "tools": ["pdflatex"]
     }
-  ],
+  ]
 }
